@@ -4,10 +4,11 @@ import { NpmAccess } from 'projen/lib/javascript';
 const majorVersion = 1;
 const project = new typescript.TypeScriptProject({
   defaultReleaseBranch: 'main',
-  name: '@rlmartin/config-loader',
+  name: '@vestahealthcare/config-loader',
   projenrcTs: true,
   releaseToNpm: true,
-  npmAccess: NpmAccess.PUBLIC,
+  npmRegistryUrl: 'https://npm.pkg.github.com',
+  npmAccess: NpmAccess.RESTRICTED,
   majorVersion,
   releaseBranches: {
     dev: { prerelease: 'dev', npmDistTag: 'dev', majorVersion },
