@@ -1,5 +1,5 @@
 {
-  "name": "@rlmartin/config-loader",
+  "name": "@vestahealthcare/config-loader",
   "scripts": {
     "build": "npx projen build",
     "bump": "npx projen bump",
@@ -49,7 +49,7 @@
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
   "version": "0.0.0",
   "jest": {
